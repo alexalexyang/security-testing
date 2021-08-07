@@ -14,7 +14,21 @@ export default function Home() {
       <Content>
         <Header>
           <h1>Security testing</h1>
+
           <p>{description}</p>
+
+          <p>
+            Get cookies from
+            <a href="https://task-checklist.vercel.app/tryme" target="__blank">
+              this page
+            </a>
+            . Then come back here to try these buttons.
+          </p>
+
+          <p>
+            Feel free to download both repos to try locally and get insight from
+            the server.
+          </p>
         </Header>
 
         <ImageCorsBypass />

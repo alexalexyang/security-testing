@@ -105,12 +105,14 @@ export default function CorsFormBypass() {
         <p>
           When submit is clicked the `action` attribute on the form handles the
           POST request. This will redirect you to the other domain for now
-          because I do not know how to `preventDefault` here yet.
+          because I do not know how to `preventDefault` here yet. Anyway you
+          will see that the other domain has accepted the form data as a request
+          body. Freaky and pretty neat!
         </p>
 
         <p>
           Again, the response is blocked by CORS. But, with access to the server
-          you can see it accepts this request.
+          you can see further that it accepts this request.
         </p>
 
         <p>This method by-passes CORS and successfully enacts CSRF.</p>
