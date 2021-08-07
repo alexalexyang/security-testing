@@ -31,15 +31,12 @@ export default function ImageCorsBypass() {
   return (
     <SectionWrapper>
       <h2>Get cat image</h2>
+
       <TextWrapper>
         <p>Getting the image directly from the API does not work.</p>
         <p>The HTML img tag by-passes CORS to get it for us.</p>
-        <p>
-          If you open the dev tools application tab you should see cookies from
-          the other site. If not, the exploits still work. But to really see the
-          cookies, click the button to get the cat image.
-        </p>
       </TextWrapper>
+
       <ButtonsWrapper>
         <RoundButton onClick={getCatfromApi}>
           {catApiError ? "Delete cat API error from state" : "Get cat from API"}
@@ -48,6 +45,7 @@ export default function ImageCorsBypass() {
           {catWithImg ? "Delete cat from img " : "Get cat with img tag"}
         </RoundButton>
       </ButtonsWrapper>
+
       {catApiError && (
         <>
           <p>Error message: {catApiError}.</p>
