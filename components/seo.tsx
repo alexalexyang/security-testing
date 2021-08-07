@@ -3,19 +3,19 @@ import { NextSeo } from "next-seo";
 export default function Seo({ description }: { description: string }) {
   return (
     <NextSeo
-      title="Task Checklist"
+      title="Security testing"
       description={description}
       // canonical={pageUrl}
       openGraph={{
         // url: pageUrl,
-        title: "Task Checklist",
+        title: "Security testing",
         description: description,
         // images: [pageImage],
-        site_name: "Task Checklist",
+        site_name: "Security testing",
       }}
       twitter={{
         // handle: twitter,
-        site: "Task Checklist",
+        site: "Security testing",
         // cardType: "summary_large_image",
       }}
       // noindex={disallowRobot}
