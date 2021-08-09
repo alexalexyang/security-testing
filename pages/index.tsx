@@ -5,6 +5,7 @@ import ImageCorsBypass from "../components/cors-image-bypass";
 import PageFooter from "../components/footer";
 import Seo from "../components/seo";
 import { TextWrapper } from "../styles/misc-styles";
+import { vulnerableDomain } from "../constants/constants";
 
 const description = "Just some security testing.";
 
@@ -21,10 +22,7 @@ export default function Home() {
 
             <p>
               Get cookies from{" "}
-              <a
-                href="https://task-checklist.vercel.app/tryme"
-                target="__blank"
-              >
+              <a href={vulnerableDomain} target="__blank">
                 this page
               </a>
               . Then come back here to try these buttons.
